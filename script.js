@@ -13,10 +13,12 @@ function nextImage () {
     images[currentImageIndex].classList.add('selected')
 }
 
+
 function start () {
        setInterval(() => {
              nextImage()
        }, time)
 }
+
 
 window.addEventListener('load', start)
